@@ -1,0 +1,12 @@
+python rendering.py \
+-i ./sim_result/sim_result_${time} \
+--path outputs/teddy \
+--env data/hdr/teddy.exr \
+-b 0 \
+-e 100 \
+-f \
+-s 1 \
+-o render_result/1 \
+-M 460 \
+-p 20 \
+--shutter-time 0.0

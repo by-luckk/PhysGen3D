@@ -1,0 +1,32 @@
+output_dir: outputs
+
+# segment
+dino_config: configs/GroundingDINO_SwinT_OGC.py
+grounded_checkpoint: pretrained_models/groundingdino_swint_ogc.pth
+sam_version: "vit_h"
+sam_checkpoint: pretrained_models/sam_vit_h_4b8939.pth
+box_threshold: 0.3
+text_threshold: 0.25
+
+# generate mesh
+ins_config: configs/instant-mesh-large.yaml
+diffusion_steps: 75
+seed: 42
+scale: 1.0 # Scale of instantmesh generated object.
+export_texmap: true
+
+# locate
+distance: 4.5 # Render distance.
+view: 6 # Number of input views.
+
+# inpaint
+lama_config: configs/lama-prediction.yaml
+lama_ckpt: pretrained_models/big-lama
+dilate_kernel_size: 50
+lama_find_shade: false # Use lama after finding shade.
+
+# dust3r
+dust3r_confidence: 0
+dust3r_ckpt: pretrained_models/DUSt3R_ViTLarge_BaseDecoder_512_dpt.pth
+
+device: cuda

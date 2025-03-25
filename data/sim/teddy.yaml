@@ -1,0 +1,11 @@
+size: 2
+R: 256
+filling: false
+pull_to_ground: true
+E_default: 5.0e4 
+damping: 5.0
+friction: 0.5
+input_path: outputs/teddy
+scale: 1.0
+velocities:
+  - [0.0, 0.0, 1.0]

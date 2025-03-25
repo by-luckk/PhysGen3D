@@ -1,0 +1,12 @@
+[submodule "submodules/Grounded-Segment-Anything"]
+	path = submodules/Grounded-Segment-Anything
+	url = git@github.com:IDEA-Research/Grounded-Segment-Anything.git
+[submodule "submodules/GroundingDINO"]
+	path = submodules/GroundingDINO
+	url = git@github.com:IDEA-Research/GroundingDINO.git
+[submodule "submodules/lama"]
+	path = submodules/lama
+	url = git@github.com:advimman/lama.git
+[submodule "submodules/dust3r"]
+	path = submodules/dust3r
+	url = git@github.com:naver/dust3r.git
