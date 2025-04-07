@@ -1,7 +1,7 @@
 <br />
 <p align="center">
 
-  <h1 align="center">Minitwin: Crafting a Miniature Interactive <br> World from a Single Image</h1>
+  <h1 align="center">PHysGen3D: Crafting a Miniature Interactive <br> World from a Single Image</h1>
 
   <p align="center">
    CVPR, 2025
@@ -14,7 +14,7 @@
     ·
     <a href="https://saurabhg.web.illinois.edu/"><strong>Saurabh Gupta</strong></a>
     ·
-    <a href="https://yunzhuli.github.io/"><strong>yunzhu li</strong></a>
+    <a href="https://yunzhuli.github.io/"><strong>Yunzhu Li</strong></a>
     ·
     <a href="https://sites.google.com/view/fromandto"><strong>Hao Zhao</strong></a>
     ·
@@ -26,17 +26,17 @@
 </p>
 
   <p align="center">
-    <a href='https://minitwin.github.io/'>
+    <a href='https://arxiv.org/pdf/2503.20746'>
       <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='Paper PDF'></a>
-    <a href='https://minitwin.github.io/' style='padding-left: 0.5rem;'><img src='https://img.shields.io/badge/arXiv-2409.18964-b31b1b.svg'  alt='Arxiv'></a>
-    <a href='https://by-luckk.github.io/MiniTwin/' style='padding-left: 0.5rem;'>
+    <a href='https://arxiv.org/abs/2503.20746' style='padding-left: 0.5rem;'><img src='https://img.shields.io/badge/arXiv-2503.20746-b31b1b.svg'  alt='Arxiv'></a>
+    <a href='https://by-luckk.github.io/PhysGen3D/' style='padding-left: 0.5rem;'>
       <img src='https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=blue' alt='Project Page'></a>
   </p>
 
 </p>
 <br />
 
-This repository contains the implementation for the paper [Minitwin: Crafting a Miniature Interactive World from a Single Image](https://by-luckk.github.io/MiniTwin/), CVPR 202. In this paper, we present a novel framework that transforms a single image into an amodal, camera-centric, interactive 3D scene. 
+This repository contains the implementation for the paper [PHysGen3D: Crafting a Miniature Interactive World from a Single Image](https://by-luckk.github.io/PhysGen3D/), CVPR 2025. In this paper, we present a novel framework that transforms a single image into an amodal, camera-centric, interactive 3D scene. 
 
 ## Overview
 ![overview](assets/pipeline.png)
