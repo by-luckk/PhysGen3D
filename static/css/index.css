@@ -122,6 +122,8 @@ body {
 .results-carousel {
   overflow: hidden;
   white-space: nowrap;
+  gap: 10px;
+  display: flex;
 }
 
 .results-carousel .item {
