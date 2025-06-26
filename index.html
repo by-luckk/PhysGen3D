@@ -39,6 +39,7 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script src="./static/js/interactive_angle_drag.js"></script>
 </head>
 <body>
 
@@ -618,7 +619,7 @@
                   <div class="card-image">
                     <figure class="image">
                       <video controls loop muted>
-                        <source src="static/videos/4/3.mp4" type="video/mp4">
+                        <source src="static/videos/teddy/first.png" type="video/mp4">
                       </video>
                     </figure>
                   </div>
@@ -628,8 +629,54 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>        
         </div>
+        
+        <!-- interactive（原 section id 不变也无妨）-->
+        <section class="section hero is-light" id="interactiveWindGallery">
+
+          <div class="container is-max-desktop">
+            <!-- 标题、副标题（可按需修改） -->
+            <div class="columns is-centered">
+                <h2 class="subtitle" style="margin-bottom: 1.5rem;">
+                  Drag the arrow to make the teddy bear jump!
+                </h2>
+            </div>
+
+            <!-- <div class="gallery-categories-container">
+              <div class="gallery-category-box" id="wind-category-teddy" style="background-color:#e1f0ff;">
+                <h3 class="title is-5 has-text-centered">Teddy Bear</h3>
+                <div class="line-drag-gallery-thumbnails-group">
+                  <img src="static/videos/teddy/first.png"
+                      alt="Teddy 1"
+                      class="line-drag-gallery-thumb"
+                      data-target="wind-gallery-item-teddybear1">
+                </div>
+              </div>
+            </div> -->
+
+            <!-- ★★★ 显示区，只保留 teddy 项 ★★★ -->
+            <div id="windGalleryDisplayArea">
+
+              <div id="wind-gallery-item-teddybear1" class="line-drag-gallery-item">
+                <div id="angleDemoContainer-teddybear1" class="js-angle-drag-demo"
+                    data-root-dir="static/videos/teddy/"
+                    data-initial-image-file="first.png"
+                    data-videos-dir="videos2/"
+                    data-specs-file="video_specs.json"
+                    style="max-width:560px;width:90%;margin:20px auto;box-shadow:0 4px 10px rgba(0,0,0,0.15);border-radius:8px;overflow:hidden;position:relative;cursor:pointer;">
+                  <img class="angle-static-image" src="" alt="Teddy 1" style="display:block;width:100%;height:auto;">
+                  <canvas class="angle-canvas-overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;"></canvas>
+                  <video class="angle-video-player" playsinline style="display:none;width:100%;height:auto;"></video>
+                </div>
+              </div>
+
+
+            </div><!-- /windGalleryDisplayArea -->
+
+          </div><!-- /.container -->
+        </section>
+
       </div>
     </div>
     <!--/ Dynamics Effects. -->

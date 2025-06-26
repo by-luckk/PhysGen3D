@@ -2,7 +2,7 @@ import subprocess
 import os
 
 # 定义视频文件所在的目录
-video_dir = 'videos'
+video_dir = 'videos/teddy/videos'
 
 # 遍历目录下的所有文件
 for filename in os.listdir(video_dir):
@@ -10,7 +10,7 @@ for filename in os.listdir(video_dir):
         input_video = video_dir + '/' + filename
         output_video = video_dir + '2/' + filename
         print(input_video)
-
+        os.makedirs(os.path.dirname(output_video), exist_ok=True) 
         command = [
             "ffmpeg",
             "-i", input_video,
