@@ -21,7 +21,7 @@ from submodules.lama.saicinpainting.evaluation.refinement import refine_predict
 from submodules.lama.saicinpainting.training.trainers import load_checkpoint
 from submodules.lama.saicinpainting.evaluation.data import pad_tensor_to_modulo
 
-from minitwin.utils import load_img_to_array, save_array_to_img, dilate_mask
+from utils.utils import load_img_to_array, save_array_to_img, dilate_mask
 
 # def mask_with_shade(img, mask, out_dir=None):
 #     h, w = img.shape[:2]

@@ -34,7 +34,7 @@ from lama_inpaint import inpaint_img_with_lama
 # dust3r
 from my_dust3r import run_dust3r
 
-from minitwin.utils import load_img_to_array, save_array_to_img
+from utils.utils import load_img_to_array, save_array_to_img
 from locate.fit_object_pytorch3d import estimate_pose
 from locate.pytorch_opt import optimize_mesh_pose, render_depth
 
